@@ -1,16 +1,13 @@
-# tugas_api
+# Tugas API
 
-A new Flutter project.
+## Link API
+https://valorant-api.com/
 
-## Getting Started
+GET allAgents
+https://valorant-api.com/v1/agents
 
-This project is a starting point for a Flutter application.
+GET agentByUuid
+https://valorant-api.com/v1/agents/{agentUuid}
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Note
+Hanya bisa menyimpan 1 user
