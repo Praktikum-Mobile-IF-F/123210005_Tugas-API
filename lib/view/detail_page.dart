@@ -54,6 +54,7 @@ class AgentDetailPage extends StatelessWidget {
   Widget _buildSuccessSection(DetailAgentModel data) {
     return Center(
       child: Container(
+        color: Colors.grey,
         padding: EdgeInsets.all(16),
         child: Column(
           children: [
@@ -71,13 +72,12 @@ class AgentDetailPage extends StatelessWidget {
             ),
             Expanded(
                 child: ListView.builder(
-              itemCount: data.data!.abilities!.length,
-              itemBuilder: (BuildContext context, int index) {
-                return ListTile(
-                  // child: Text(data.data!.abilities![index].displayName!),
-                  title: Text(data.data!.abilities![index].displayName!),
-                  subtitle: Text(data.data!.abilities![index].description!),
-                  leading:
+                  itemCount: data.data!.abilities!.length,
+                  itemBuilder: (BuildContext context, int index) {
+                  return ListTile(
+                    title: Text(data.data!.abilities![index].displayName!),
+                    subtitle: Text(data.data!.abilities![index].description!),
+                    leading:
                       Image.network(data.data!.abilities![index].displayIcon!),
                 );
               },

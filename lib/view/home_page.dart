@@ -99,6 +99,7 @@ class HomePage extends StatelessWidget {
                     idAgent: agentData.uuid,
                   ))),
       child: Card(
+        color: Colors.grey,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
