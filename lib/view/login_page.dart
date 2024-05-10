@@ -53,6 +53,8 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset("images/valorant.jpeg", width: MediaQuery.sizeOf(context).height*0.2,),
+              SizedBox(height: 32,),
               TextField(
                 controller: emailController,
                 decoration: InputDecoration(labelText: 'Email'),
@@ -67,11 +69,6 @@ class _LoginPageState extends State<LoginPage> {
               ),
               ElevatedButton(
                 onPressed: () async {
-                  // Simpan data user menggunakan Shared Preferences
-                  // SharedPreferences prefs = await SharedPreferences.getInstance();
-                  // prefs.setString('email', emailController.text);
-                  // prefs.setString('password', passwordController.text);
-
                   if (emailController.text == logindata.getString('email') &&
                       passwordController.text ==
                           logindata.getString('password')) {

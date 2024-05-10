@@ -1,6 +1,7 @@
 # Tugas API
 
 ## Link API
+Valorant API
 https://valorant-api.com/
 
 GET allAgents
